@@ -34,9 +34,9 @@ export class SelectPageComponent implements OnInit {
   }
   getProducts() {
     // json
-    //  this.products  = this.dataService.getData();
+     this.products  = this.dataService.getData();
 // HttpClient
-    this.dataService.getData().subscribe(products => this.products = products);
+//     this.dataService.getData().subscribe(products => this.products = products);
 
   }
 

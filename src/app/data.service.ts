@@ -11,6 +11,8 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 export class DataService {
 
   // ---------------------------- Json ----------------------------
+  //
+  //
   // productList: Product[];
   // dataUrl = 'data.json';
   // private pItems = PRODUCTS;
@@ -18,17 +20,17 @@ export class DataService {
   // getData(): Product[] {
   //   return this.pItems;
   // }
-  // updateProduct(product: Product) {
-  //   const index = findIndex(this.pItems, (p: Product) => {
-  //     return p.id === product.id;
-  //   });
-  //   this.pItems[index] = product;
-  // }
-
+  // // updateProduct(product: Product) {
+  // //   const index = findIndex(this.pItems, (p: Product) => {
+  // //     return p.id === product.id;
+  // //   });
+  // //   this.pItems[index] = product;
+  // // }
+  //
   // deleteProduct(product: Product) {
   //   this.pItems.splice(this.pItems.indexOf(product), 1);
   // }
-
+  //
 
   // -------------------------------------- Http ------------------------------------------------
   // productList: Product[];
@@ -82,6 +84,8 @@ export class DataService {
     return Promise.reject(error.message || error);
   }
 
+
+//  -------------------------------------------------------------------------------------------------------
 
 
 }
