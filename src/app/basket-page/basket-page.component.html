@@ -1,0 +1,33 @@
+
+<div class = "basketPage">
+  <div class = "tableOrder">
+    <table>
+      <tr>
+        <th>Название</th>
+        <th>Цена</th>
+        <th>Количество</th>
+        <th>Стоимость</th>
+        <th>Удалить</th>
+      </tr>
+      <tbody *ngFor="let order of orders">
+        <tr>
+          <td>{{order.product.name}}</td>
+          <td>{{order.product.price}} р</td>
+          <td>{{order.amount}}</td>
+          <td>{{order.product.price * order.amount}} р</td>
+          <td> <button mat-button  (click)="deleteOrder(order)">Удалить</button></td>
+        </tr>
+      </tbody>
+      <tr>
+        <td  colspan="3">Итого</td>
+
+        <td>{{cost}} р</td>
+        <td> </td>
+      </tr>
+    </table>
+  </div>
+<div class="buttons">
+   <button mat-button  (click)="buy()" routerLink="/selectPage">Купить</button>
+   <button mat-button (click)="cancel()"  routerLink="/selectPage">Отмена</button>
+  </div>
+</div>

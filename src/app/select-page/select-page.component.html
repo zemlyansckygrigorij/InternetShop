@@ -1,0 +1,78 @@
+
+<div >  <button mat-button routerLink="/basketPage">Корзина</button></div>
+<div class = "selected" *ngIf="selectedProduct">
+
+  <p class ="selectedTitle"> {{selectedProduct.name}}</p>
+  <img class ="selectedImg" src={{selectedProduct.image}} (click)="selectProduct(product)">
+  <p class ="selectedTitle">описание </p>
+  <p class ="selectedDescription">{{selectedProduct.description}}</p>
+  <p class ="selectedPrice">цена - {{selectedProduct.price}}р</p>
+  <p>
+    количество на складе - {{selectedProduct.amount}}
+<br>
+    <!---->
+    <input
+      type="number"
+
+      [(ngModel)] = "count"
+      (change)="changeInput(count)"
+    >
+    <!---->
+    <br>
+    {{labelError}}
+  </p>
+  <button mat-button  (click)="buyProduct(selectedProduct, count)">Купить</button>
+  <button mat-button  (click)="cancel()">Отменить</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<mat-grid-list cols="6" rowHeight="1:1">
+
+
+
+<div *ngFor="let product of products">
+  <mat-grid-tile>
+    <mat-card class="example-card"  [ngClass]="cardSelected">
+      <mat-card-header>
+        <!--<div mat-card-avatar class="example-header-image"></div>-->
+        <!--<mat-card-title>название - {{product.name}}</mat-card-title>-->
+
+      </mat-card-header>
+      <img mat-card-image src={{product.image}} (click)="selectProduct(product)">
+      <mat-card-content>
+        <p>
+          {{product.name}}<br>
+        цена - {{product.price}} р<br>
+          количество на складе - {{product.amount}}<br>
+
+        <mat-card-actions>
+          <button mat-button  (click)="selectProduct(product)">Выбрать</button>
+        </mat-card-actions>
+        </p>
+      </mat-card-content>
+      <!--<mat-card-actions>-->
+        <!--<button mat-button  (click)="selectProduct(product)">Выбрать</button>-->
+
+      <!--</mat-card-actions>-->
+    </mat-card>
+  </mat-grid-tile>
+
+</div>
+
+
+</mat-grid-list>

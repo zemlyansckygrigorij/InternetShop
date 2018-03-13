@@ -1,0 +1,16 @@
+
+<div >  <button mat-button routerLink="/basketPage">Корзина</button></div>
+<div class = "selected" *ngIf="selectedProduct">
+
+  <p class ="selectedTitle"> {{selectedProduct.name}}</p>
+  <img class ="selectedImg" src={{selectedProduct.image}} (click)="selectProduct(product)">
+  <p class ="selectedTitle">описание </p>
+  <p class ="selectedDescription">{{selectedProduct.description}}</p>
+  <p class ="selectedPrice">цена - {{selectedProduct.price}}р</p>
+  <p>
+    количество на складе - {{selectedProduct.amount}}
+  </p>
+  <button mat-button  (click)="buyProduct(selectedProduct, 1)">Купить</button>
+  <button mat-button  (click)="cancel()">Отменить</button>
+
+</div>

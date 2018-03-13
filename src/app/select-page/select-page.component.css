@@ -1,0 +1,49 @@
+body{
+  background: lightgreen;
+}
+mat-grid-list {
+  background: lightgreen;
+}
+
+mat-card {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+
+}
+mat-card-image{
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+img{
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+img.selectedImg{
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+
+}
+
+div.selected{
+
+  width: 600px;
+  height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0 0 -125px;
+
+  z-index: 999999;
+  background: lightgrey;
+  padding: 20px;
+  /*width: 500px;*/
+  /*height: 500px;*/
+  /*margin: 100px;*/
+}
+mat-card:visited{
+  border:1px solid red;
+}
