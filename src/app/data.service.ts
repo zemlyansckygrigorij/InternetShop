@@ -62,7 +62,8 @@ export class DataService {
   // // --------------------------------------- HttpClient finish editer ------------------------------------
 
 
-  dataUrl = 'http://www.localhost:8080/' ;
+ // dataUrl = 'http://www.localhost:8080/' ;
+  dataUrl = 'https://app-internetshopbackend.herokuapp.com';
   private headers = new HttpHeaders({'Content-Type': 'application/json'});
   constructor(private http: HttpClient) {}
 
