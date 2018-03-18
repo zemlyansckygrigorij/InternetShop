@@ -11,7 +11,7 @@ import {Product} from '../product';
   styleUrls: ['./basket-page.component.css']
 })
 export class BasketPageComponent implements OnInit {
-  private  orders: Order[];
+ /* private */ orders: Order[];
   cost: number ;
 
   constructor(private orderService: OrderService, private dataService: DataService) { }
