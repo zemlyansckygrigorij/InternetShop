@@ -7,5 +7,11 @@ https://coursetro.com/posts/code/112/Angular-5-Deployment---Deploy-your-Angular-
 5) ng build --prod --base-href="https://InternetShop.github.io.github.io/zemlyansckygrigorij/"
 6) git add .
 7) git commit -m "first commit"
-8) git remote add origin git@github.com:yourinfo/yourgit.git
+8) git remote add origin git@github.com:zemlyansckygrigorij/InternetShop.github.io.git
+9)git push -u origin master
+10) angular-cli-ghpages
+
+
+
+
 https://github.com/zemlyansckygrigorij/InternetShop.github.io.git
